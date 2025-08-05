@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        :root {
+            --primary-color: #00f2ea;
+            --background-start: #012a2b;
+            --background-end: #000000;
+            --text-color: #e0e0e0;
+            --card-background: rgba(10, 30, 30, 0.5);
+            --glow-color: rgba(0, 242, 234, 0.5);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: var(--text-color);
+            background-color: var(--background-end);
+            background-image: radial-gradient(circle at 50% 0%, var(--background-start) 0%, var(--background-end) 60%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            font-weight: 600;
+            text-shadow: 0 0 10px var(--glow-color);
+        }
+
+        .header .update-date {
+            font-size: 0.9rem;
+            color: #a0a0a0;
+        }
+
+        .header .update-date i {
+            margin-right: 8px;
+        }
+
+        .terms-list {
+            position: relative;
+        }
+
+        /* Linha vertical que conecta os itens */
+        .terms-list::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            bottom: 50px;
+            width: 2px;
+            background-color: rgba(0, 242, 234, 0.2);
+        }
+
+        .term-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .term-icon {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            background-color: var(--card-background);
+            border: 2px solid var(--primary-color);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            box-shadow: 0 0 15px var(--glow-color);
+            z-index: 2;
+        }
+
+        .term-content h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin: 0 0 8px 0;
+            font-weight: 600;
+        }
+
+        .term-content p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 20px;
+            font-size: 0.9rem;
+            color: #a0a0a0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Termos de Uso</h1>
+            <p class="update-date"><i class="fa-solid fa-calendar-days"></i>Atualizado em 13/06/2025</p>
+        </div>
+
+        <div class="terms-list">
+            <div class="term-item">
+                <div class="term-icon"><i class="fa-solid fa-check"></i></div>
+                <div class="term-content">
+                    <h2>Aceitação dos Termos</h2>
+                    <p>Ao utilizar o bot, você automaticamente concorda com todos os nossos termos de uso.</p>
+                </div>
+            </div>
+
+            <div class="term-item">
+                <div class="term-icon"><i class="fa-solid fa-tag"></i></div>
+                <div class="term-content">
+                    <h2>Política de Reembolso</h2>
+                    <p>Não realizamos reembolsos. Ao adquirir qualquer serviço, o valor é considerado definitivo.</p>
+                </div>
+            </div>
+
+            <div class="term-item">
+                <div class="term-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="term-content">
+                    <h2>Segurança do Bot</h2>
+                    <p>Nosso bot é desenvolvido para não causar banimentos em contas. Priorizamos a segurança dos usuários.</p>
+                </div>
+            </div>
+
+            <div class="term-item">
+                <div class="term-icon"><i class="fa-solid fa-wrench"></i></div>
+                <div class="term-content">
+                    <h2>Manutenção do Serviço</h2>
+                    <p>O bot pode passar por manutenções sem aviso prévio para melhorias ou correções.</p>
+                </div>
+            </div>
+
+            <div class="term-item">
+                <div class="term-icon"><i class="fa-solid fa-file-lines"></i></div>
+                <div class="term-content">
+                    <h2>Alterações nos Termos</h2>
+                    <p>Reservamo-nos o direito de modificar estes termos a qualquer momento, sem aviso prévio.</p>
+                </div>
+            </div>
+
+            <div class="term-item">
+                <div class="term-icon"><i class="fa-solid fa-ban"></i></div>
+                <div class="term-content">
+                    <h2>Rescisão e Suspensão de Acesso</h2>
+                    <p>O uso inadequado do bot pode resultar em suspensão temporária, bloqueio definitivo ou banimento, conforme decisão da equipe.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 KS &bull; Todos os direitos reservados</p>
+        </div>
+    </div>
+
+</body>
+</html>
